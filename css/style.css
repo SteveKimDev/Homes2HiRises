@@ -1,0 +1,398 @@
+/*box sizing for different browsers*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+
+/** Header Section **/
+
+header {
+    background-image: url(../img/header.png);
+    background-repeat: none;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    color: #fff;
+    max-height: 900px;
+}
+
+#header-logo {
+    margin-top: 30px;
+}
+
+.header-icon {
+    background-color: transparent;
+    border: none;
+    font-size: 80px;
+    margin-top: 5%;
+}
+
+.header-icon:focus {
+    /** get rid of blue outline **/
+    outline: none!important;
+}
+
+.fa-play-circle {
+    color: #fff;
+    opacity: 0.5;
+}
+
+.header-title {
+    font-style: italic;
+    font-weight: 700;
+    line-height: 100%;
+    margin: 288px auto 15px auto;
+    width: 40%
+}
+
+.modal-dialog {
+    width: 100%;
+}
+
+.modal-content {
+    border-radius: 0px;
+    background-color: #000;
+}
+
+.clickable {
+    /** modal on iOS mobile device **/
+    cursor: pointer;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    margin-top: -80px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+/** 19" screens and up **/
+
+@media (min-width: 1440px) {
+    .logo {
+        width: 600px;
+    }
+    .header-title {
+        font-size: 20px;
+    }
+}
+
+/** 12" screens and up **/
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+    .logo {
+        width: 500px;
+    }
+    .header-title {
+        font-size: 20px;
+        width: 42%;
+        margin-top: 170px;
+    }
+
+}
+
+/** Large devices (desktops, 992px and up) **/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .logo {
+        width: 400px;
+    }
+    .header-title {
+        font-size: 15px;
+        margin-top: 140px;
+    }
+}
+
+/** Medium devices (tablets, 768px and up) **/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .logo {
+        width: 300px;
+    }
+    .header-title {
+        font-size: 12px;
+        margin-top: 89px;
+    }
+}
+
+/** Small devices (less than 767px) **/
+
+@media (max-width: 767px) {
+    .logo {
+        width: 200px;
+    }
+    .header-title {
+        font-size: 12px;
+        margin-top: 95px;
+    }
+    .modal-content {
+        margin-left: -20px;
+    }
+    .video-container {
+        margin-top: -30px;
+    }
+}
+
+/** Extra small devices (portrait phones, less than 576px) **/
+
+@media (max-width: 575px) {
+    #header-logo {
+        margin-top: 5px;
+    }
+    .header-icon {
+        font-size: 40px;
+        margin-top: 0%;
+    }
+    .header-title {
+        margin-top: 35px;
+        width: 82%;
+    }
+}
+
+
+/** Section 2 **/
+
+.section2 {
+    color: #000;
+    background-color: #F9F8F7;
+}
+
+.section2-apple-store,
+.section2-google-play {
+    width: 100px;
+    margin-bottom: 15px;
+}
+
+.section2-apple-store {
+    float: right;
+}
+
+.download-img {
+    margin-bottom: 15px;
+}
+
+#section2-icons {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+#section2-icons {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#facebook-icon {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+#twitter-icon {
+    padding-left: .5px;
+    padding-right: .5px;
+}
+
+#pinterest-icon {
+    padding-left: 2.5px;
+    padding-right: 2.5px;
+}
+
+#linkedin-icon {
+    padding-left: .5px;
+    padding-right: .5px;
+}
+
+#instagram-icon {
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+#android-icon {
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+#app-store {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+#app-store-icon {
+    margin-left: -1px;
+    margin-right: -1px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+#section2-icons a:link,
+#section2-icons a:visited {
+    background-color: #F9F8F7;
+    color: #000;
+    padding: 3px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#section2-icons a:hover,
+#section2-icons a:active {
+    border: #000 solid 1px;
+}
+
+/** 19" screens and up **/
+
+@media (min-width: 1440px) {
+    .section2-text {
+        font-size: 20px;
+    }
+}
+
+/** 12" screens and up **/
+
+@media (min-width: 1200px) {
+    .section2 {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .section2-text {
+        font-size: 18px;
+    }
+}
+
+/** Medium devices (tablets, 768px and up) **/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .section2-title {
+        font-size: 20px;
+    }
+    .section2-text {
+        font-size: 11px;
+    }
+}
+
+/** Small devices (less than 767px) **/
+
+@media (max-width: 767px) {
+    .section2-title {
+        font-size: 20px;
+    }
+}
+
+
+/** Section 3 **/
+
+.section3 {
+    color: #fff;
+    background-color: #000;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.h2hr-icon {
+    width: 50px;
+}
+
+#section3-title {
+    font-style: italic;
+}
+
+.check-icon {
+    font-size: 20px;
+}
+
+.fa-check-circle {
+    color: #F99121;
+}
+
+/** Medium and Large devices (less than 1199px) **/
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .section3-margin-top {
+        margin-top: -27px;
+    }
+}
+
+@media (max-width: 767px) {
+    .check-icon {
+        text-align: right;
+    }
+}
+
+
+/** Section 4 **/
+
+.section4 {
+    background-image: url(../img/app-img.png);
+    background-repeat: none;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    color: #fff;
+    max-height: 900px;
+}
+
+.section4-title {
+    text-transform: uppercase;
+    margin-bottom: 42%;
+}
+
+/** Extra small devices (portrait phones, less than 576px) **/
+
+@media (max-width: 575px) {
+    .section4-title {
+        font-size: 15px;
+    }
+}
+
+/** Footer Section **/
+
+.footer-section {
+    color: #fff;
+    background-color: #000;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.apple-store,
+.google-play {
+    width: 150px;
+    padding-top: 25px;
+}
+
+.apple-store {
+    float: right;
+}
+
+.footer-copyright-text {
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
